@@ -1,0 +1,50 @@
+// Buttons
+.btn-l-big {
+  background: var(--primary-blue);
+  color: var(--crayola-2);
+  padding: 1.4rem 3rem;
+  border-radius: 0.7rem;
+  transition: 0.2s;
+  font: {
+    size: $font-14;
+    weight: 500;
+  }
+
+  &:hover {
+    background: var(--crayola-2);
+    color: var(--primary-blue);
+    box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
+  }
+}
+.btn-l-big-transparent {
+  background: transparent;
+  color: var(--primary-text);
+  padding: 1.4rem 3rem;
+  border-radius: 0.7rem;
+  transition: 0.2s;
+  font: {
+    size: $font-14;
+    weight: 500;
+  }
+  
+  &:hover {
+    box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
+  }
+}
+
+// ---- Logo ----
+.logo-container {
+  @include flex-jc-ic();
+  font: {
+    size: $font-20;
+    weight: 600
+  }
+
+  i {
+    background: var(--primary-blue);
+    color: #fff;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+  }
+}
