@@ -164,10 +164,6 @@ button, a {
   margin-right: 1rem;
 }
 
-main {
-  padding: 8.4rem 0;
-}
-
 .section-shared {
   padding: 0 8rem;
 }
@@ -178,7 +174,7 @@ main {
   justify-content: space-between;
   align-items: center;
   background: var(--crayola-2);
-  padding: 0 12rem;
+  padding: 8.4rem 12rem;
 }
 
 .hero__first {

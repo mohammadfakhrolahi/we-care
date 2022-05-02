@@ -9,6 +9,13 @@ header {
   @include flex-jb-ic();
   background: transparent;
   padding: 2rem 8rem;
+  transition: 0.2s;
+  z-index: 10;
+}
+
+.header-bg {
+  height: 6rem;
+  @include bg-blur();
 }
 
 #header-divider {

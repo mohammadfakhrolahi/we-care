@@ -1,7 +1,7 @@
 @import './globalStyling/layout';
 
 main {
-  padding: 8.4rem 0;
+  // padding: 8.4rem 0;
 }
 
 .section-shared {
@@ -12,7 +12,7 @@ main {
   position: relative;
   @include flex-jb-ic();
   background: var(--crayola-2);
-  padding: 0 12rem ;
+  padding: 8.4rem 12rem ;
 }
 
 // Hero First section
