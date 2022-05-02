@@ -60,6 +60,7 @@ img,
 span,
 input {
   font-weight: normal;
+  color: var(--primary-text);
 }
 
 p, span {
@@ -94,6 +95,7 @@ button, a {
 
 :root {
   --primary-text: #102851ff;
+  --secondary-text: rgb(119, 123, 133);
   --primary-bg: #f9fafc;
   --secondary-bg: #ffffff;
   --primary-blue: #014ed5ff;
@@ -146,10 +148,32 @@ button, a {
   border-radius: 0.5rem;
 }
 
+.cart-s {
+  width: 20rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-text);
+  color: var(--primary-bg);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+.cart-s i {
+  margin-right: 1rem;
+}
+
 header {
+  width: 100%;
+  height: 8.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background: transparent;
   padding: 2rem 8rem;
 }
 
@@ -170,7 +194,6 @@ header {
   font-weight: 600;
 }
 .header-nav .header-nav__item a {
-  color: var(--primary-text);
   position: relative;
   text-decoration: none;
 }

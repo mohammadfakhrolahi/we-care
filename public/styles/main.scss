@@ -1,1 +1,50 @@
-@import './globalStyling/layout'
+@import './globalStyling/layout';
+
+main {
+  padding: 8.4rem 0;
+}
+
+.section-shared {
+  padding: 0 8rem;
+}
+
+#hero {
+  position: relative;
+  @include flex-jb-ic();
+  background: var(--crayola-2);
+  padding: 0 12rem ;
+}
+
+// Hero First section
+.hero__first {
+  width: 50%;
+  @include column-js-is();
+}
+
+// Title
+.hero__header {
+  font: {
+    size: 5rem;
+    weight: 700;
+  }
+}
+
+// Hero Paragraph
+.text-2 {
+  width: 70%;
+  color: var(--secondary-text);
+  margin-top: 2rem;
+}
+
+.hero__last-container {
+  @include flex-jc-ic();
+  margin-top: 2rem;
+
+  > div:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
+
+// Hero Last section
+.hero__last {
+}

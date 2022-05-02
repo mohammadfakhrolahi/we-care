@@ -1,7 +1,13 @@
 @import '../globalStyling/layout';
 
 header {
+  width: 100%;
+  height: 8.4rem;
+  position: fixed;
+  top: 0;
+  left: 0;
   @include flex-jb-ic();
+  background: transparent;
   padding: 2rem 8rem;
 }
 
@@ -23,7 +29,6 @@ header {
 
     // Link
     a {
-      color: var(--primary-text);
       position: relative;
       text-decoration: none;
 

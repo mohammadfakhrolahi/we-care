@@ -60,6 +60,7 @@ img,
 span,
 input {
   font-weight: normal;
+  color: var(--primary-text);
 }
 
 p, span {
@@ -94,6 +95,7 @@ button, a {
 
 :root {
   --primary-text: #102851ff;
+  --secondary-text: rgb(119, 123, 133);
   --primary-bg: #f9fafc;
   --secondary-bg: #ffffff;
   --primary-blue: #014ed5ff;
@@ -144,6 +146,69 @@ button, a {
   padding: 0.5rem;
   margin-right: 1rem;
   border-radius: 0.5rem;
+}
+
+.cart-s {
+  width: 20rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary-text);
+  color: var(--primary-bg);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  font-size: 1.2rem;
+}
+.cart-s i {
+  margin-right: 1rem;
+}
+
+main {
+  padding: 8.4rem 0;
+}
+
+.section-shared {
+  padding: 0 8rem;
+}
+
+#hero {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--crayola-2);
+  padding: 0 12rem;
+}
+
+.hero__first {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.hero__header {
+  font-size: 5rem;
+  font-weight: 700;
+}
+
+.text-2 {
+  width: 70%;
+  color: var(--secondary-text);
+  margin-top: 2rem;
+}
+
+.hero__last-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.hero__last-container > div:not(:last-child) {
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */
