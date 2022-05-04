@@ -1,24 +1,26 @@
 @import './globalStyling/layout';
 
-main {
+// main {
   // padding: 8.4rem 0;
-}
+// }
 
 .section-shared {
   padding: 0 8rem;
 }
 
 #hero {
-  position: relative;
-  @include flex-jb-ic();
+  height: 90vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
   background: var(--crayola-2);
-  padding: 8.4rem 12rem ;
+  padding: 8.4rem 12rem;
+  z-index: 1;
 }
 
 // Hero First section
 .hero__first {
-  width: 50%;
-  @include column-js-is();
+  @include column-jc-is();
 }
 
 // Title
@@ -45,6 +47,24 @@ main {
   }
 }
 
-// Hero Last section
-.hero__last {
+// Hero Last section - Hero Image
+#hero-image {
+  width: 40vw;
+}
+
+// ----- Search Section -----
+#search-section {
+  grid-column: 1/-1;
+  grid-row: 2/4;
+  width: 100%;
+}
+
+// Search Container
+#main-search-container {
+  width: 100%;
+  background: var(--white);
+  padding: 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 0rem 0.15rem var(--shadow);
+  z-index: 200;
 }

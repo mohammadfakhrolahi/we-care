@@ -18,7 +18,7 @@
   <header id="header">
 
     <div id="header-divider">
-      <a href="/index.html" class="logo-container">
+      <a href="/index.html" class="main-logo">
         <i class="fa-solid fa-circle-plus"></i> We.Care
       </a>
   
@@ -42,9 +42,9 @@
   </header>
 
   <main>
-    <div id="hero" class="section-shared">
+    <section id="hero" class="section-shared">
       <div class="hero__first">
-        <h1 class="hero__header">Feel better about <br>finding healtcare</h1>
+        <h1 class="hero__header">Feel better about <br>finding healthcare</h1>
   
         <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -64,34 +64,45 @@
       </div>
 
       <div class="hero__last">
-        <img src="./public/images/doctor_PNG15969.png" alt="Hero image">
-      </div>
-    </div>
-    <div id="hero" class="section-shared">
-      <div class="hero__first">
-        <h1 class="hero__header">Feel better about <br>finding healtcare</h1>
-  
-        <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-  
-        <div class="hero__last-container">
-          <div class="cart-s">
-            <i class="fa-solid fa-2x fa-thumbs-up"></i>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-          </div>
-          
-          <div class="cart-s">
-            <i class="fa-solid fa-2x fa-house-medical"></i>
-            Lorem ipsum dolor sit amet, consectetur adipiscing
-          </div>
+        <div id="hero-image">
+          <img src="./public/images/doctor_PNG15969.png" alt="Hero image">
         </div>
       </div>
 
-      <div class="hero__last">
-        <img src="./public/images/doctor_PNG15969.png" alt="Hero image">
+      <div id="search-section">
+        <div id="main-search-container">
+  
+          <form class="form-search">
+            <div class="primary-text-input-container">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" class="primary-text-input" placeholder="Search Doctor, Conditions">
+            </div>
+  
+            <div class="primary-text-input-container">
+              <i class="fa-solid fa-location-dot"></i>
+              <input type="text" class="primary-text-input" placeholder="Set your location">
+            </div>
+  
+            <button class="btn-square-l">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+  
+          <h4>You may be looking for</h4>
+  
+          <div class="tags-container">
+            <span class="tag">
+              COVID-19 <i class="fa-solid fa-xmark"></i>
+            </span>
+            
+          </div>
+  
+        </div>
       </div>
-    </div>
+    </section>
+
+    
+
   </main>
   
   <script src="./src/index.js"></script>

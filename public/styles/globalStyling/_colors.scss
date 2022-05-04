@@ -1,13 +1,17 @@
 :root {
   --primary-text: #102851ff;
   --secondary-text: rgb(119, 123, 133);
+  --gray-light: rgb(227, 235, 255);
   --primary-bg: #f9fafc;
   --secondary-bg: #ffffff;
   --primary-blue: #014ed5ff;
+  --blue-light: #5d99fa;
+  --blue-light-2: #83b1fb;
   --crayola: #ccdfffff;
   --crayola-2: #d6e5ffff;
-  --aa: #fafbfeff;
+  --light-color: #fafbfeff;
   --white: #ffffff;
+  --shadow: rgba(0, 0, 0, 0.038);
 }
 
 @mixin bg-blur {

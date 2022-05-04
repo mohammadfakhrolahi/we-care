@@ -78,6 +78,7 @@ input {
 
 a {
   text-decoration: none;
+  color: var(--primary-text);
 }
 
 ul,
@@ -90,7 +91,7 @@ img {
   height: auto;
 }
 
-button, a {
+button {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   all: unset;

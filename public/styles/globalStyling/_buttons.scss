@@ -32,12 +32,33 @@
   }
 }
 
+// Square Button
+.btn-square-l {
+  width: 5.2rem;
+  height: 5.2rem;
+  background: var(--primary-blue);
+  color: var(--white);
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  text-align: center;
+  transition: 0.2s;
+
+  &:hover {
+    background: var(--crayola-2);
+    color: var(--primary-blue);
+    box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
+  }
+}
+
+// ---- Tags ----
+.tag{}
+
 // ---- Logo ----
-.logo-container {
+.mian-logo {
   @include flex-jc-ic();
   font: {
     size: $font-20;
-    weight: 600
+    weight: 600;
   }
 
   i {

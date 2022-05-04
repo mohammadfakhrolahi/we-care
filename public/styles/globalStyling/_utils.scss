@@ -9,6 +9,43 @@
   font-size: $font-12;
 
   i {
+    color: var(--blue-light);
     margin-right: 1rem;
+  }
+}
+
+// ---- Form ----
+// Form container
+.form-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 5.2rem;
+
+  div:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+// Primary Text Input
+.primary-text-input-container {
+  @include flex-jc-ic();
+  background: var(--light-color);
+  padding: 0 1.5rem;
+  border: 0.3rem solid var(--gray-light);
+  border-radius: 0.7rem;
+  transition: 0.2s;
+  
+  i {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+  }
+  
+  &:focus-within {
+    border: 0.3rem solid var(--blue-light-2);
+  }
+  
+  input {
+    width: 100%;
+    height: 5.2rem;
   }
 }
