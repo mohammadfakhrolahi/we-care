@@ -1,9 +1,5 @@
 @import './globalStyling/layout';
 
-// main {
-  // padding: 8.4rem 0;
-// }
-
 .section-shared {
   padding: 0 8rem;
 }
@@ -12,15 +8,16 @@
   height: 90vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
   background: var(--crayola-2);
-  padding: 8.4rem 12rem;
+  padding-top: 8.4rem;
   z-index: 1;
 }
 
 // Hero First section
 .hero__first {
   @include column-jc-is();
+  padding-left: 12rem;
 }
 
 // Title
@@ -48,15 +45,22 @@
 }
 
 // Hero Last section - Hero Image
+#hero__last {
+  padding-right: 12rem;
+}
+
 #hero-image {
   width: 40vw;
 }
 
 // ----- Search Section -----
 #search-section {
-  grid-column: 1/-1;
-  grid-row: 2/4;
   width: 100%;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  padding: 0 12rem;
+  background: rgb(214,229,255);
+background: linear-gradient(180deg, rgba(214,229,255,1) 50%, rgba(249,250,252,1) 50%);
 }
 
 // Search Container
@@ -67,4 +71,23 @@
   border-radius: 2rem;
   box-shadow: 0 0 0rem 0.15rem var(--shadow);
   z-index: 200;
+}
+
+.search__h4 {
+  margin-top: 2rem;
+}
+
+// Tags Container
+.tags-container {
+  @include flex-js-ic-wrap();
+  margin-top: 1rem;
+
+  // Tags
+  .tag:not(:last-child) {
+    margin: 1rem 1rem 0 0;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
 }

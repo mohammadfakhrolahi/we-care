@@ -11,6 +11,13 @@
   align-items: center;
 }
 
+@mixin flex-js-ic-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 // ---- Column ----
 @mixin column-jc-ic {
   display: flex;

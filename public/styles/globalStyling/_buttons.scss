@@ -1,4 +1,24 @@
 // Buttons
+button {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.btn-s {
+  @include flex-jc-ic();
+  background: var(--crayola);
+  color: var(--primary-blue);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  transition: 0.2s;
+  font-weight: 500;
+
+  &:hover {
+    box-shadow: 0 0 0 0.1rem var(--primary-blue);
+  }
+
+}
+
 .btn-l-big {
   background: var(--primary-blue);
   color: var(--crayola-2);
@@ -51,7 +71,34 @@
 }
 
 // ---- Tags ----
-.tag{}
+.tag {
+  max-width: fit-content;
+  @include flex-jc-ic();
+  background: var(--gray-light);
+  color: var(--primary-text);
+  border-radius: 0.5rem;
+  padding: 0.7rem;
+  transition: 0.2s;
+  cursor: default;
+
+  &:hover {
+    box-shadow: 0 0 0 0.1rem var(--blue-light-2);
+  }
+
+  i {
+    width: 1.9rem;
+    height: 1.9rem;
+    @include flex-jc-ic();
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+    transition: inherit;
+    cursor: pointer;
+    
+    &:hover {
+      background: var(--blue-light-2);
+    }
+  }
+}
 
 // ---- Logo ----
 .mian-logo {
