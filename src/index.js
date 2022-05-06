@@ -9,3 +9,18 @@ window.addEventListener('scroll', () => {
     header.classList.remove('header-bg')
   }
 })
+
+// Generate randome color
+let rendomeBg = document.querySelectorAll('.rendome-bg')
+const colorList = ['#E4C1F9', '#FF99C8', '#FCF6BD', '#A9DEF9', '#A1FCDF', '#ffcfd2', '#8eecf5', '#ffccd5']
+
+const getRandomColor = () => {
+  const getColor = colorList[Math.floor(Math.random() * colorList.length)]
+  return getColor
+}
+
+const bgColor = getRandomColor()
+
+rendomeBg.forEach((item) => {
+  item.style.background = getRandomColor()
+})

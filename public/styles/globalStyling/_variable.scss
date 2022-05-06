@@ -11,6 +11,12 @@
   align-items: center;
 }
 
+@mixin flex-js-ic {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 @mixin flex-js-ic-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +26,12 @@
 
 // ---- Column ----
 @mixin column-jc-ic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@mixin column-jc-ic-cs {
   display: flex;
   flex-direction: column;
   justify-content: center;
