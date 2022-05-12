@@ -126,9 +126,11 @@ span {
   --blue-light-2: #83b1fb;
   --crayola: #ccdfffff;
   --crayola-2: #d6e5ff;
+  --crayola-3: #ccdfffb4;
   --light-color: #fafbfeff;
   --white: #ffffff;
   --white-t: #ffffff;
+  --purple: #E4C1F9;
   --shadow: rgba(0, 0, 0, 0.038);
 }
 
@@ -241,6 +243,37 @@ button {
   border-radius: 0.5rem;
 }
 
+.icon-box {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+
+.icon-bg-purple {
+  background: var(--purple);
+}
+.icon-bg-purple i {
+  color: #8d49e1;
+}
+
+.icon-bg-blue {
+  background: #c3ebff;
+}
+.icon-bg-blue i {
+  color: #0091f9;
+}
+
+.icon-bg-green {
+  background: #A1FCDF;
+}
+.icon-bg-green i {
+  color: #23b95f;
+}
+
 .cart-s {
   width: 20rem;
   height: 7rem;
@@ -287,6 +320,17 @@ button {
 .primary-text-input-container input {
   width: 100%;
   height: 5.2rem;
+}
+
+.form-search-s {
+  display: flex;
+  flex-direction: column;
+}
+.form-search-s > div, .form-search-s button {
+  margin-top: 2rem;
+}
+.form-search-s button {
+  width: 100%;
 }
 
 ::-webkit-scrollbar {

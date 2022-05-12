@@ -16,7 +16,6 @@ button {
   &:hover {
     box-shadow: 0 0 0 0.1rem var(--primary-blue);
   }
-
 }
 
 .btn-l-big {
@@ -46,7 +45,7 @@ button {
     size: $font-14;
     weight: 500;
   }
-  
+
   &:hover {
     box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
   }
@@ -93,7 +92,7 @@ button {
     border-radius: 0.5rem;
     transition: inherit;
     cursor: pointer;
-    
+
     &:hover {
       background: var(--blue-light-2);
     }
@@ -115,4 +114,39 @@ button {
     margin-right: 1rem;
     border-radius: 0.5rem;
   }
+}
+
+// ---- Icon ----
+.icon-box {
+  width: 4rem;
+  height: 4rem;
+  @include flex-jc-ic();
+  // background: #a9def9;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+}
+
+// ---- Icon Background color ----
+.icon-bg-purple {
+  background: var(--purple);
+
+    i {
+      color: #8d49e1;
+    }
+}
+
+.icon-bg-blue {
+  background: #c3ebff;
+
+    i {
+      color: #0091f9;
+    }
+}
+
+.icon-bg-green {
+  background: #A1FCDF;
+
+    i {
+      color: #23b95f;
+    }
 }

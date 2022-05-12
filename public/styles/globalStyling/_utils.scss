@@ -34,19 +34,31 @@
   border: 0.3rem solid var(--gray-light);
   border-radius: 0.7rem;
   transition: 0.2s;
-  
+
   i {
     font-size: 1.8rem;
     margin-right: 1rem;
   }
-  
+
   &:focus-within {
     border: 0.3rem solid var(--blue-light-2);
   }
-  
+
   input {
     width: 100%;
     height: 5.2rem;
+  }
+}
+
+.form-search-s {
+  @include column();
+
+  > div, button {
+    margin-top: 2rem;
+  }
+
+  button {
+    width: 100%;
   }
 }
 
@@ -60,13 +72,13 @@
     position: absolute;
     bottom: -0.1rem;
     left: 0;
-    background-color:var(--primary-text);
+    background-color: var(--primary-text);
     border-radius: 0.5rem;
     transform-origin: right;
     transform: scaleX(0);
     transition: transform 0.2s ease-in-out;
   }
-  
+
   &:hover:before {
     transform-origin: left;
     transform: scaleX(1);
@@ -89,6 +101,6 @@
 
 // ---- Scrollbar for FireFox ----
 :root {
-  scrollbar-color:var(--blue-light) var(--crayola)  !important;
+  scrollbar-color: var(--blue-light) var(--crayola) !important;
   scrollbar-width: thin !important;
 }

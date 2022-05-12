@@ -22,22 +22,23 @@ main {
 .hero__first {
   @include column-jc-is();
   padding-left: 12rem;
-}
 
-// Title
-.hero__header {
-  font: {
-    size: 5rem;
-    weight: 700;
+  // Title
+  .hero__header {
+    font: {
+      size: 5rem;
+      weight: 700;
+    }
+  }
+  
+  // Hero Paragraph
+  .text-2 {
+    width: 70%;
+    color: var(--secondary-text);
+    margin-top: 2rem;
   }
 }
 
-// Hero Paragraph
-.text-2 {
-  width: 70%;
-  color: var(--secondary-text);
-  margin-top: 2rem;
-}
 
 .hero__last-container {
   @include flex-jc-ic();
@@ -64,7 +65,11 @@ main {
   grid-row: 2/3;
   padding: 0 12rem;
   background: #d6e5ff;
-  background: linear-gradient(180deg, rgba(214,229,255,1) 50%, rgba(249,250,252,1) 50%);
+  background: linear-gradient(
+    180deg,
+    rgba(214, 229, 255, 1) 50%,
+    rgba(249, 250, 252, 1) 50%
+  );
 }
 
 // Search Container
@@ -75,11 +80,12 @@ main {
   border-radius: 2rem;
   box-shadow: 0 0 0rem 0.15rem var(--shadow);
   z-index: 200;
+
+  .search__h4 {
+    margin-top: 2rem;
+  }
 }
 
-.search__h4 {
-  margin-top: 2rem;
-}
 
 // Tags Container
 .tags-container {
@@ -106,12 +112,11 @@ main {
 .popular-search__items__container {
   cursor: pointer;
   // @include flex-js-ic();
-  
+
   // Items Title
   .popular-search__items:not(:last-child) {
     margin-bottom: 2rem;
   }
-
 }
 
 // hr tag
@@ -125,7 +130,7 @@ hr {
 // Popular Search Item container
 .popular-search__item__container {
   @include flex-js-ic();
-  overflow-x: auto ;
+  overflow-x: auto;
   padding: 2rem 0;
 
   .popular-search__item {
@@ -135,16 +140,16 @@ hr {
     border-radius: 1rem;
     border: 0.2rem solid var(--crayola-2);
     transition: 0.2s;
-    
+
     &:not(:last-child) {
       margin-right: 2rem;
     }
-    
+
     &:hover {
       border: 0.2rem solid var(--blue-light-2);
       background: var(--gray-light);
     }
-    
+
     a {
       @include column-jc-ic();
       padding: 2rem 1rem;
@@ -153,10 +158,75 @@ hr {
         width: 5rem;
         height: 5rem;
         @include flex-jc-ic();
-        background: #A9DEF9;
+        background: #a9def9;
         margin-bottom: 2rem;
         border-radius: 50%;
       }
     }
   }
+}
+
+// ---- Find the doctor ----
+.find-doctor {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.find-doctor__first {
+  width: 100%;
+  @include column();
+
+  .text-2 {
+    margin-top: 2rem
+  }
+}
+
+.find-docter-items {
+  @include flex-js-ic();
+  position: relative;
+  margin-top: 1rem;
+
+  // Icon
+  .icon-box {
+    min-width: 4rem;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 70%;
+      width: 0.3rem;
+      height: 40%;
+      background-color: var(--gray-light);
+    }
+  }
+
+  // Header and paragraph
+  .find-docter-items__content {
+    margin: 1.9rem 0 0 2rem;
+
+    .text-2 {
+      margin-top: 1rem;
+    }
+  }
+}
+
+//
+.find-doctor__last {
+  position: relative;
+  @include flex-jc-ic();
+}
+
+.find-doctor__last__image {
+  @include column-jc-ic();
+}
+
+.find-doctor__search-container {
+  width: 30rem;
+  position: absolute;
+  left: 0;
+  background-color: var(--white-t);
+  padding: 2rem;
+  margin-left: 4rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 1rem 1rem var(--shadow);
 }

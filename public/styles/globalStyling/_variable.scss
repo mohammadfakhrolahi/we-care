@@ -25,18 +25,23 @@
 }
 
 // ---- Column ----
+@mixin column {
+  display: flex;
+  flex-direction: column;
+}
+
 @mixin column-jc-ic {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-@mixin column-jc-ic-cs {
+
+@mixin column-jc-ic-ce {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
-  align-content: flex-start;
 }
 
 @mixin column-js-is-cs {
