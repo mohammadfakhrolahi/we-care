@@ -127,6 +127,8 @@ span {
   --crayola: #ccdfffff;
   --crayola-2: #d6e5ff;
   --crayola-3: #ccdfffb4;
+  --crayola-4: #e4e7e6;
+  --crayola-5: #f1f5fe;
   --light-color: #fafbfeff;
   --white: #ffffff;
   --white-t: #ffffff;
@@ -568,7 +570,9 @@ hr {
   justify-content: flex-start;
   align-items: center;
   background: var(--crayola-2);
+  padding-top: 4rem;
 }
+
 .why-wecare__first {
   width: 50%;
   position: relative;
@@ -588,7 +592,8 @@ hr {
   width: 50%;
   padding-left: 4rem;
 }
-.why-wecare__last > p, .why-wecare__last li {
+.why-wecare__last > p,
+.why-wecare__last li {
   margin-top: 2rem;
 }
 .why-wecare__last .why-wecare-list__item {
@@ -596,12 +601,57 @@ hr {
   justify-content: flex-start;
   align-items: center;
 }
-.why-wecare__last .why-wecare-list__item p, .why-wecare__last .why-wecare-list__item i {
+.why-wecare__last .why-wecare-list__item p,
+.why-wecare__last .why-wecare-list__item i {
   font-size: 1.6rem;
 }
 .why-wecare__last .why-wecare-list__item i {
   margin-right: 1rem;
   color: var(--primary-blue);
+}
+
+.meet-specialist__header {
+  text-align: center;
+}
+.meet-specialist__header p {
+  margin-top: 2rem;
+}
+
+.meet-specialist__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin-top: 4rem;
+}
+
+.specialist-card {
+  width: 100%;
+  min-width: 25rem;
+  background: var(--crayola-5);
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.specialist-card .image-box-m {
+  background: var(--crayola-4);
+  object-fit: cover;
+  border-radius: 2rem;
+}
+.specialist-card .image-box-m img {
+  transform: translateY(0);
+  transition: 0.4s;
+}
+.specialist-card h4,
+.specialist-card p {
+  margin-top: 1rem;
+}
+.specialist-card:hover {
+  box-shadow: 0 0 0 0.2rem var(--crayola-2);
+}
+.specialist-card:hover img {
+  transform: scale3d(1.03, 1.03, 0.3);
 }
 
 /*# sourceMappingURL=main.css.map */

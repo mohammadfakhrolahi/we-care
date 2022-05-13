@@ -30,7 +30,7 @@ main {
       weight: 700;
     }
   }
-  
+
   // Hero Paragraph
   .text-2 {
     width: 70%;
@@ -38,7 +38,6 @@ main {
     margin-top: 2rem;
   }
 }
-
 
 .hero__last-container {
   @include flex-jc-ic();
@@ -85,7 +84,6 @@ main {
     margin-top: 2rem;
   }
 }
-
 
 // Tags Container
 .tags-container {
@@ -177,7 +175,7 @@ hr {
   @include column();
 
   .text-2 {
-    margin-top: 2rem
+    margin-top: 2rem;
   }
 }
 
@@ -235,10 +233,7 @@ hr {
 .why-wecare {
   @include flex-js-ic();
   background: var(--crayola-2);
-
-  .image-box-xl {
-
-  }
+  padding-top: 4rem;
 }
 
 // First div
@@ -262,22 +257,79 @@ hr {
   width: 50%;
   padding-left: 4rem;
 
-  > p, li {
-    margin-top: 2rem
+  > p,
+  li {
+    margin-top: 2rem;
   }
 
   // list items
   .why-wecare-list__item {
     @include flex-js-ic();
 
-    p, i {
+    p,
+    i {
       font-size: $font-16;
     }
-    
 
     i {
       margin-right: 1rem;
       color: var(--primary-blue);
+    }
+  }
+}
+
+// ---- Meet out specialist ----
+.meet-specialist {
+}
+
+.meet-specialist__header {
+  text-align: center;
+
+  p {
+    margin-top: 2rem;
+  }
+}
+
+// Meet specialist Cards
+.meet-specialist__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 4rem;
+  margin-top: 4rem;
+}
+
+// Specialist Card
+.specialist-card {
+  width: 100%;
+  min-width: 25rem;
+  background: var(--crayola-5);
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+
+  .image-box-m {
+    background: var(--crayola-4);
+    object-fit: cover;
+    border-radius: 2rem;
+
+    img {
+      transform: translateY(0);
+      transition: 0.4s;
+    }
+  }
+
+  h4,
+  p {
+    margin-top: 1rem;
+  }
+
+  // Hover
+  &:hover {
+    box-shadow:  0 0 0 0.2rem var(--crayola-2);
+    img {
+      transform: scale3d(1.03, 1.03, 0.3);
     }
   }
 }
