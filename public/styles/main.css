@@ -337,15 +337,17 @@ button {
 
 ::-webkit-scrollbar {
   width: 1rem;
+  height: 1.1rem;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--crayola);
+  border-radius: 2.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--blue-light);
-  border-radius: 5px;
+  border-radius: 2.5rem;
 }
 
 :root {
@@ -636,10 +638,11 @@ hr {
 }
 .specialist-card .image-box-m {
   background: var(--crayola-4);
-  object-fit: cover;
   border-radius: 2rem;
+  object-fit: cover;
 }
 .specialist-card .image-box-m img {
+  height: 29rem;
   transform: translateY(0);
   transition: 0.4s;
 }

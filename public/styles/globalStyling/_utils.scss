@@ -88,15 +88,17 @@
 // ---- Scrollbar for Google Chrome ----
 ::-webkit-scrollbar {
   width: 1rem;
+  height: 1.1rem;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--crayola);
+  border-radius: 2.5rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--blue-light);
-  border-radius: 5px;
+  border-radius: 2.5rem;
 }
 
 // ---- Scrollbar for FireFox ----

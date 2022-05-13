@@ -311,10 +311,11 @@ hr {
 
   .image-box-m {
     background: var(--crayola-4);
-    object-fit: cover;
     border-radius: 2rem;
-
+    object-fit: cover;
+    
     img {
+      height: 29rem;
       transform: translateY(0);
       transition: 0.4s;
     }
