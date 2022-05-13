@@ -17,6 +17,12 @@
   align-items: center;
 }
 
+@mixin flex-js-is {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 @mixin flex-js-ic-wrap {
   display: flex;
   flex-wrap: wrap;

@@ -230,3 +230,54 @@ hr {
   border-radius: 2rem;
   box-shadow: 0 0 1rem 1rem var(--shadow);
 }
+
+// ---- Why you choose We Care ----
+.why-wecare {
+  @include flex-js-ic();
+  background: var(--crayola-2);
+
+  .image-box-xl {
+
+  }
+}
+
+// First div
+.why-wecare__first {
+  width: 50%;
+  position: relative;
+  @include flex-jc-ic();
+
+  .why-wecare__list {
+    position: absolute;
+    right: 10%;
+
+    > img {
+      width: 15rem;
+    }
+  }
+}
+
+// Last div
+.why-wecare__last {
+  width: 50%;
+  padding-left: 4rem;
+
+  > p, li {
+    margin-top: 2rem
+  }
+
+  // list items
+  .why-wecare-list__item {
+    @include flex-js-ic();
+
+    p, i {
+      font-size: $font-16;
+    }
+    
+
+    i {
+      margin-right: 1rem;
+      color: var(--primary-blue);
+    }
+  }
+}

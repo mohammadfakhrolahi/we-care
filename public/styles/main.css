@@ -563,4 +563,45 @@ hr {
   box-shadow: 0 0 1rem 1rem var(--shadow);
 }
 
+.why-wecare {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: var(--crayola-2);
+}
+.why-wecare__first {
+  width: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why-wecare__first .why-wecare__list {
+  position: absolute;
+  right: 10%;
+}
+.why-wecare__first .why-wecare__list > img {
+  width: 15rem;
+}
+
+.why-wecare__last {
+  width: 50%;
+  padding-left: 4rem;
+}
+.why-wecare__last > p, .why-wecare__last li {
+  margin-top: 2rem;
+}
+.why-wecare__last .why-wecare-list__item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.why-wecare__last .why-wecare-list__item p, .why-wecare__last .why-wecare-list__item i {
+  font-size: 1.6rem;
+}
+.why-wecare__last .why-wecare-list__item i {
+  margin-right: 1rem;
+  color: var(--primary-blue);
+}
+
 /*# sourceMappingURL=main.css.map */
