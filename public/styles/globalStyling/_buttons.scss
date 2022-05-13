@@ -120,11 +120,11 @@ button {
 }
 
 // ---- Logo ----
-.mian-logo {
-  @include flex-jc-ic();
+.main-logo {
+  @include flex-js-ic();
   font: {
-    size: $font-20;
-    weight: 600;
+    size: 2rem;
+    weight: 600
   }
 
   i {
@@ -137,6 +137,10 @@ button {
 }
 
 // ---- Icon ----
+.icon-m {
+  font-size: 2.6rem;
+}
+
 .icon-box {
   width: 4rem;
   height: 4rem;

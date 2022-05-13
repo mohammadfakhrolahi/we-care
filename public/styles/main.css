@@ -115,9 +115,13 @@ span {
   font-weight: 500;
 }
 
+.text-2 {
+  color: var(--secondary-text);
+}
+
 :root {
   --primary-text: #102851ff;
-  --secondary-text: rgb(119, 123, 133);
+  --secondary-text: #777b85;
   --gray-light: rgb(227, 235, 255);
   --primary-bg: #f9fafc;
   --secondary-bg: #ffffff;
@@ -246,19 +250,23 @@ button {
   background: var(--blue-light-2);
 }
 
-.mian-logo {
+.main-logo {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 2rem;
   font-weight: 600;
 }
-.mian-logo i {
+.main-logo i {
   background: var(--primary-blue);
   color: #fff;
   padding: 0.5rem;
   margin-right: 1rem;
   border-radius: 0.5rem;
+}
+
+.icon-m {
+  font-size: 2.6rem;
 }
 
 .icon-box {
@@ -356,6 +364,7 @@ button {
   padding: 1rem;
 }
 .subscribe-form input {
+  width: 100%;
   color: var(--secondary-text);
 }
 
@@ -377,6 +386,13 @@ button {
 :root {
   scrollbar-color: var(--blue-light) var(--crayola) !important;
   scrollbar-width: thin !important;
+}
+
+.hr-horizontal {
+  border: none;
+  width: 100%;
+  height: 0.2rem;
+  background: var(--secondary-text);
 }
 
 main {
@@ -481,7 +497,7 @@ main {
   margin-bottom: 2rem;
 }
 
-hr {
+.hr-vertical {
   margin: 0 2rem;
   background: var(--blue-light);
   width: 0.3rem;
@@ -678,7 +694,7 @@ hr {
   box-shadow: 0 0 0 0.2rem var(--crayola-2);
 }
 .specialist-card:hover img {
-  transform: scale3d(1.03, 1.03, 0.3);
+  transform: scale3d(0.95, 0.95, 0.3);
 }
 
 .patients-feedback {
@@ -699,6 +715,7 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  text-align: left;
 }
 .feedback-container > div:not(:first-child), .feedback-container p {
   margin-top: 4rem;
@@ -745,6 +762,11 @@ hr {
   font-size: 1.4rem;
 }
 
+.subscribe-section {
+  margin: 0;
+  padding: 8rem 0;
+}
+
 .subscribe-section-container {
   max-width: 70rem;
   display: flex;
@@ -756,13 +778,13 @@ hr {
   padding: 4rem;
   border-radius: 2rem;
   gap: 4rem;
-  text-align: center;
 }
 .subscribe-section-container h2 {
+  width: 60%;
   color: var(--white);
+  text-align: center;
   font-size: 3.5rem;
   font-weight: 600;
-  width: 60%;
 }
 .subscribe-section-container .subscribe-form {
   width: 60%;

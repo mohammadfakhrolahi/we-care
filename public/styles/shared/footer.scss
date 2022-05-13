@@ -1,0 +1,82 @@
+@import '../globalStyling/layout';
+
+footer {
+  @include flex-js-is();
+  background: var(--crayola-2);
+  padding: 8rem;
+  gap: 8rem;
+}
+
+.footer__first-divider {
+  // width: 15rem;
+  hr {
+    margin: 2rem 0;
+  }
+}
+
+// Social Icon
+.social-icon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
+  gap: 1rem;
+
+  i {
+    transition: 0.2s;
+  }
+
+  a:hover {
+    .fa-facebook {
+      color: #1877f2;
+    }
+
+    .fa-twitter {
+      color: #1d9bf0;
+    }
+
+    .fa-linkedin-in {
+      color: #0a66c2;
+    }
+
+    .fa-skype {
+      color: #01b5ef;
+    }
+
+    .fa-discord {
+      color: #5865f2;
+    }
+
+    .fa-youtube {
+      color: #f00;
+    }
+  }
+}
+
+// ---- Nav ----
+.footer-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8rem;
+}
+
+// Nav Container
+.footer-nav-container {
+  .h5 {
+    margin-bottom: 2rem;
+    font: {
+      size: 2rem;
+      weight: 600;
+    }
+  }
+
+  // Item
+  .footer-nav__item  {
+    > a {
+    position: relative;
+    @include hover-title-2();
+    }
+
+    &:not(:first-child) {
+      margin-top: 1rem;
+    }
+  }
+}

@@ -118,7 +118,7 @@ main {
 }
 
 // hr tag
-hr {
+.hr-vertical {
   margin: 0 2rem;
   background: var(--blue-light);
   width: 0.3rem;
@@ -279,9 +279,6 @@ hr {
 }
 
 // ---- Meet out specialist ----
-.meet-specialist {
-}
-
 .meet-specialist__header {
   text-align: center;
 
@@ -330,7 +327,7 @@ hr {
   &:hover {
     box-shadow:  0 0 0 0.2rem var(--crayola-2);
     img {
-      transform: scale3d(1.03, 1.03, 0.3);
+      transform: scale3d(0.95, 0.95, 0.3);
     }
   }
 }
@@ -352,6 +349,7 @@ hr {
 
 .feedback-container {
   @include column-jc-is();
+  text-align: left;
 
   > div:not(:first-child), p {
     margin-top: 4rem;
@@ -371,7 +369,7 @@ hr {
   grid-row-gap: 1rem;
   grid-column-gap: 2rem;
   text-align: left;
-
+  
   // Image
   .image-box {
     grid-column: 1/2;
@@ -411,9 +409,10 @@ hr {
 }
 
 // ---- Subscribe for any news update from wecare ----
-// .subscribe-section {
-//   margin: 8rem 0;
-// }
+.subscribe-section {
+  margin: 0;
+  padding: 8rem 0;
+}
 
 .subscribe-section-container {
   max-width: 70rem;
@@ -423,15 +422,15 @@ hr {
   padding: 4rem;
   border-radius: 2rem;
   gap: 4rem;
-  text-align: center;
-
+  
   h2 {
+    width: 60%;
     color: var(--white);
+    text-align: center;
     font: {
       size: 3.5rem;
       weight: 600;
     }
-    width: 60%;
   }
 
   .subscribe-form {
