@@ -35,6 +35,7 @@ button {
     box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
   }
 }
+
 .btn-l-big-transparent {
   background: transparent;
   color: var(--primary-text);
@@ -47,6 +48,25 @@ button {
   }
 
   &:hover {
+    box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
+  }
+}
+
+// Form Button
+.btn-l-form {
+  background: var(--primary-blue-dark);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  transition: 0.2s;
+  font: {
+    size: $font-14;
+    weight: 400;
+  }
+
+  &:hover {
+    background: var(--crayola-2);
+    color: var(--primary-blue);
     box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
   }
 }

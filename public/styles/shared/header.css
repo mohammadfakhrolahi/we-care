@@ -122,6 +122,7 @@ span {
   --primary-bg: #f9fafc;
   --secondary-bg: #ffffff;
   --primary-blue: #014ed5ff;
+  --primary-blue-dark: #1d2b51;
   --blue-light: #5d99fa;
   --blue-light-2: #83b1fb;
   --crayola: #ccdfffff;
@@ -181,6 +182,21 @@ button {
   font-weight: 500;
 }
 .btn-l-big-transparent:hover {
+  box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
+}
+
+.btn-l-form {
+  background: var(--primary-blue-dark);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  transition: 0.2s;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.btn-l-form:hover {
+  background: var(--crayola-2);
+  color: var(--primary-blue);
   box-shadow: inset 0 0 0 0.2rem var(--primary-blue);
 }
 
@@ -333,6 +349,14 @@ button {
 }
 .form-search-s button {
   width: 100%;
+}
+
+.subscribe-form {
+  background: var(--white-t);
+  padding: 1rem;
+}
+.subscribe-form input {
+  color: var(--secondary-text);
 }
 
 ::-webkit-scrollbar {

@@ -62,6 +62,16 @@
   }
 }
 
+// Subscribe Form
+.subscribe-form {
+  background: var(--white-t);
+  padding: 1rem;
+
+  input {
+    color: var(--secondary-text);
+  }
+}
+
 // ---- Hover ----
 // Hover on title
 @mixin hover-title {
